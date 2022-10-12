@@ -1,16 +1,21 @@
-using FahrenheitApp.Models;
+﻿using FahrenheitApp.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace UnitTestTemperature
 {
     [TestClass]
-    public class UnitTestTemperature
+    public class UnitTestTempConversion
     {
         [TestMethod]
         public void TestFahrenheitTemperatureConversion()
         {
-            double temperatureCelcius = 22;
+            double temperatureCelcius = -40;
             double temperatureFahrenheitActual;
-            double temperatureFahrenheitExpected = 71.6;
+            double temperatureFahrenheitExpected = -40;
 
 
             temperatureFahrenheitActual = Temperature.CelciusToFahrenheit(temperatureCelcius);

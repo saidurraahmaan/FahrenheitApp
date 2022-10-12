@@ -1,0 +1,27 @@
+﻿@page
+@model FahrenheitApp.Pages.TemperatureModel
+@{
+
+}
+
+<div>
+
+    <h1>Temperature Conversion</h1>
+
+    <form name="temperatureForm" id="temperatureForm" method="post">
+
+        Temperature [Celcius]:
+        <br />
+        <input name="TemperatureCelcius" type="number" class="form-control input-group-lg" required value="@Model.temperatureCelcius" />
+        <br />
+
+        Temperature [Fahrenheit]:
+        <br />
+        <input name="TemperatureFahrenheit" type="number" class="form-control input-group-lg" required value="@Model.temperatureFahrenheit" />
+        <br />
+
+        <input id="ConvertButton" type="submit" value="Convert" class="btn btn-info" />
+    </form>
+
+
+</div>
